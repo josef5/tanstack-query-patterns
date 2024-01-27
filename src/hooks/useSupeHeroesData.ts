@@ -44,9 +44,15 @@ export const useAddSuperHeroData = () => {
       queryClient.invalidateQueries({ queryKey: ["super-heroes"] });
     }, */
 
-    onMutate: async () => {
+    onMutate: async (newHero) => {
       const previousHeroData = queryClient.getQueryData<SuperHero[]>([
         "super-heroes",
+      ]);
+
+      // Optimistic update, gets overwritten on success
+      queryClient.setQueryData(["super-heroes"], (oldData: SuperHero[]) => [
+        ...oldData,
+        { ...newHero, id: (oldData?.length ?? 0) + 1 },
       ]);
 
       return { previousHeroData };
