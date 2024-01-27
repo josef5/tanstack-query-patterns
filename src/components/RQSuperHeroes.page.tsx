@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAddSuperHeroData } from "../hooks/useSupeHeroesData";
-import { useSuperHeroesData } from "../hooks/useSupeHeroesData";
+import { useAddSuperHeroData } from "../hooks/useSuperHeroesData";
+import { useSuperHeroesData } from "../hooks/useSuperHeroesData";
 
 /* const fetchSuperHeroes = async () => {
   const { data } = await axios.get("http://localhost:4000/superheroes");
