@@ -9,6 +9,12 @@ const fetchSuperHeroes = async (heroId: number) => {
   return data;
 };
 
+/**
+ * Renders a page with parallel queries for super-heroes based on their IDs.
+ *
+ * @param {number[]} heroIds - An array of hero IDs
+ * @return {JSX.Element} The rendered page with the results of the parallel queries
+ */
 const RQDynamicParallelQueriesPage = ({
   heroIds = [],
 }: {

@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+/**
+ * SuperHeroesPage traditional React component pattern for comparison
+ *
+ * @return {JSX.Element} The SuperHeroesPage component
+ */
 export const SuperHeroesPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState<SuperHero[]>([]);

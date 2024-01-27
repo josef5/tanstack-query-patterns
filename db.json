@@ -19,26 +19,6 @@
       "id": 4,
       "name": "Spiderman",
       "alterEgo": "Peter Parker"
-    },
-    {
-      "id": "66a4",
-      "name": "a",
-      "alterEgo": "b"
-    },
-    {
-      "id": "1d1d",
-      "name": "b",
-      "alterEgo": "b"
-    },
-    {
-      "id": "b9ce",
-      "name": "c",
-      "alterEgo": "c"
-    },
-    {
-      "id": "03d4",
-      "name": "d",
-      "alterEgo": "d"
     }
   ],
   "friends": [
@@ -64,11 +44,7 @@
   "channels": [
     {
       "id": "codevolution",
-      "courses": [
-        "react",
-        "vue",
-        "angular"
-      ]
+      "courses": ["react", "vue", "angular"]
     }
   ],
   "colors": [

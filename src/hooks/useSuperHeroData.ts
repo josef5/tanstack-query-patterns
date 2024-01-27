@@ -1,6 +1,12 @@
 import { useQuery /* , useQueryClient */ } from "@tanstack/react-query";
 import axios from "axios";
 
+/**
+ * Fetches superhero data based on the provided ID.
+ *
+ * @param {string} id - The ID of the superhero
+ * @return {Promise<any>} A promise that resolves with the superhero data
+ */
 export const useSuperHeroData = (id: string) => {
   // const queryClient = useQueryClient();
 

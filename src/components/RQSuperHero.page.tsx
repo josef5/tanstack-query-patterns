@@ -1,6 +1,11 @@
 import { useSuperHeroData } from "../hooks/useSuperHeroData";
 import { useParams } from "react-router-dom";
 
+/**
+ * Superhero details page
+ *
+ * @return {JSX.Element} The rendered component
+ */
 const RQSuperHeroPage = () => {
   const { heroId = "" } = useParams();
 

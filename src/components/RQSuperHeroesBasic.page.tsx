@@ -8,6 +8,11 @@ const fetchSuperHeroes = async () => {
   return data;
 };
 
+/**
+ * Renders the React Query Super Heroes Page.
+ *
+ * @return {JSX.Element} The rendered React Query Super Heroes Page.
+ */
 export const RQSuperHeroesPage = () => {
   // const { isLoading, data, isError, error, isFetching } = useSuperHeroesData();
 

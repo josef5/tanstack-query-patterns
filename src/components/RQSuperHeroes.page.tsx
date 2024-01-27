@@ -8,6 +8,12 @@ import { useSuperHeroesData } from "../hooks/useSuperHeroesData";
   return data;
 }; */
 
+/**
+ * A React component for the Super Heroes page using React Query.
+ * Fetches and mutates data using the useSuperHeroesData hook.
+ *
+ * @return {JSX.Element} The Super Heroes page component
+ */
 export const RQSuperHeroesPage = () => {
   const [name, setName] = useState("");
   const [alterEgo, setAlterEgo] = useState("");
